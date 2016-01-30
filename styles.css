@@ -1,0 +1,9 @@
+.background {
+  background-image: url(../../images/crabs_on_the_rocks.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
