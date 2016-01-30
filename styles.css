@@ -1,5 +1,10 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 .background {
-  background-image: url(../../images/crabs_on_the_rocks.jpg);
+  height: 100vh;
+  background-image: url(images/crabs_on_the_rocks.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -webkit-background-size: cover;
