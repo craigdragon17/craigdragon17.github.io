@@ -1,0 +1,24 @@
+{
+  "name": "my-professional-portfolio",
+  "version": "1.0.0",
+  "description": "this is my angularjs webapp used as my portfolio",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "npm install",
+    "build": "npm run less",
+    "less": "lessc styles.less styles.css",
+    "watch:less": "nodemon -w . -e less -x npm run less",
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "watch": "npm run watch:less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigdragon17/craigdragon17.github.io.git"
+  },
+  "author": "Ethan Fairweather aka craigdragon17",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigdragon17/craigdragon17.github.io/issues"
+  },
+  "homepage": "https://github.com/craigdragon17/craigdragon17.github.io#readme"
+}
