@@ -13,3 +13,6 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+.navbar {
+  background-color: #2d2d30;
+}
