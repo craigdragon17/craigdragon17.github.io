@@ -16,6 +16,6 @@ html {
 .navbar {
   background-color: #2d2d30;
 }
-.mobile {
+.mobile > a {
   color: #d5d5d5;
 }
