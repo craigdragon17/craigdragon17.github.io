@@ -16,6 +16,6 @@ html {
 .navbar {
   background-color: #2d2d30;
 }
-.navbar > li > a {
+#navbar > li > a {
   color: #d5d5d5;
 }
