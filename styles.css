@@ -18,10 +18,10 @@ html {
 }
 .navbar-default .navbar-toggle {
   border: transparent;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .navbar-default .navbar-nav > li > a {
   color: #d5d5d5;
