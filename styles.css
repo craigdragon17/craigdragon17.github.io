@@ -17,7 +17,7 @@ html {
   background-color: #2d2d30;
 }
 .navbar .navbar-default .navbar-toggle {
-  border-color: none;
+  border: none;
 }
 .navbar .navbar-default .navbar-nav > li > a {
   color: #d5d5d5;
