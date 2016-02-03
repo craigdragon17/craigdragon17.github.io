@@ -16,10 +16,10 @@ html {
 .navbar {
   background-color: #2d2d30;
 }
-.navbar .navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle {
   border: transparent;
 }
-.navbar .navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
   color: #d5d5d5;
 }
 #nav-icon3 span:nth-child(1) {
