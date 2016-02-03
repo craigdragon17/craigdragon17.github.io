@@ -17,11 +17,12 @@ html {
 
 .navbar{
     background-color: #2d2d30;
+  
+  .navbar-default{
     
-}
-
-.navbar-default{
-    
+    .navbar-toggle {
+		border-color: none;
+	}
     .navbar-nav {
     
         & > li{
@@ -32,44 +33,51 @@ html {
            }
     }
 }
-
-#nav-icon3 span:nth-child(1) {
-  top: 0px;
+    
+}
+#nav-icon3 {
+	span {
+		&:nth-child(1) {
+			top: 0px;
+		}
+		&:nth-child(2) {
+			top: 18px;
+		}
+		&:nth-child(3) {
+			top: 18px;
+		}
+		&:nth-child(4) {
+			top: 36px;
+		}
+	}
+}
+#nav-icon3.open {
+	span {
+		&:nth-child(1) {
+			left: 50%;
+			top: 18px;
+			width: 0%;
+		}
+		&:nth-child(2) {
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		&:nth-child(3) {
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+		&:nth-child(4) {
+			left: 50%;
+			top: 18px;
+			width: 0%;
+		}
+	}
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-  top: 18px;
-}
-
-#nav-icon3 span:nth-child(4) {
-  top: 36px;
-}
-
-#nav-icon3.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
-
-#nav-icon3.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#nav-icon3.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-#nav-icon3.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
 
 
 @import "views/home/home.less";
