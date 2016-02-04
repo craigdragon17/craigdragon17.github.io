@@ -21,6 +21,32 @@ html {
 .navbar-default .navbar-nav > li > a {
   color: #d5d5d5;
 }
+.position {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #2d2d30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.position .facebook .facecolor {
+  color: #d5d5d5;
+}
+.position .twitter .twittercolor {
+  color: #d5d5d5;
+}
+.position .linkedin .linkedcolor {
+  color: #d5d5d5;
+}
+.position .github .gitcolor {
+  color: #d5d5d5;
+}
 @media (min-width: 768px) {
   .home-content-container .home-content-header {
     display: flex;
