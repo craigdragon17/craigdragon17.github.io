@@ -4,7 +4,6 @@ html {
 }
 .background {
   height: 100vh;
-  width: 100vw;
   background-image: url(images/crabs_on_the_rocks.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -21,4 +20,62 @@ html {
 }
 .navbar-default .navbar-nav > li > a {
   color: #d5d5d5;
+}
+@media (min-width: 768px) {
+  .home-content-container .home-content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .home-content-container .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-content-container .content-section .profile img#fontpic {
+    height: 300px;
+    width: 240px;
+    border-top-left-radius: 200px 225px;
+    border-top-right-radius: 200px 225px;
+    border-bottom-right-radius: 200px 225px;
+    border-bottom-left-radius: 200px 225px;
+  }
+  .home-content-container .home-content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .home-content-container .home-content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .home-content-container .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-content-container .content-section .profile img#fontpic {
+    height: 300px;
+    width: 240px;
+    border-top-left-radius: 200px 225px;
+    border-top-right-radius: 200px 225px;
+    border-bottom-right-radius: 200px 225px;
+    border-bottom-left-radius: 200px 225px;
+  }
+  .home-content-container .home-content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
