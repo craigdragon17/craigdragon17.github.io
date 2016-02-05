@@ -6,7 +6,8 @@
   "devDependencies": {
     "http-server": "^0.6.1",
     "watchify": "latest",
-    "nodemon": "latest"
+    "nodemon": "latest",
+    "less":"latest"
   },
   "scripts": {
      "prestart": "npm install",
