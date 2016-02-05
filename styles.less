@@ -3,79 +3,262 @@ html {
     padding: 0;
 }
 
-.background{
-  height: 100vh;
-  background-image:url(images/crabs_on_the_rocks.jpg); 
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.navbar{
-    background-color: #2d2d30;
+@media(min-width:768px){
     
-}
+    .background{
+    height: 100vh;
+    background-image:url(http://res.cloudinary.com/djtbj5voh/image/upload/v1454613951/iStock_000083193947_Large_h9t90z.jpg); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
 
-.navbar-default{
-    
-    .navbar-toggle {
-		border: transparent;
+    .navbar{
+        background-color: #2d2d30;
         
-	}
-    .navbar-nav {
-    
-        & > li{
+    }
+
+    .navbar-default{
+        
+        .navbar-toggle {
+            border: transparent;
             
-            & > a{
-           color:#d5d5d5
-             }
-           }
         }
+        .navbar-nav {
+        
+            & > li{
+                
+                & > a{
+            color:#d5d5d5
+                }
+            }
+            }
+    }
+
+    .position{
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #2d2d30;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        left:0;
+        right:0;
+        .facebook{
+            
+            .facecolor{
+                color:#d5d5d5
+            }
+        }
+        .twitter{
+            
+            .twittercolor{
+                color:#d5d5d5
+            }
+        }
+        .linkedin{
+            
+            .linkedcolor{
+                color:#d5d5d5
+            }
+        }
+        .github{
+            
+            .gitcolor{
+                color:#d5d5d5
+            }
+        }
+        
+    }
 }
 
-.position{
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: #2d2d30;
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left:0;
-    right:0;
-    .facebook{
-        
-        .facecolor{
-            color:#d5d5d5
-        }
+@media(max-width:767px) {
+ 
+ 
+ .background{
+    height: 100vh;
+    background-image:url(http://res.cloudinary.com/djtbj5voh/image/upload/v1454613951/iStock_000083193947_Large_h9t90z.jpg); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
-    .twitter{
-        
-        .twittercolor{
-            color:#d5d5d5
-        }
-    }
-    .linkedin{
-        
-        .linkedcolor{
-            color:#d5d5d5
-        }
-    }
-    .github{
-        
-        .gitcolor{
-            color:#d5d5d5
-        }
-    }
-    
-}
 
+    .navbar{
+        background-color: #2d2d30;
+        
+    }
+
+    .navbar-default{
+        .c-hamburger {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-transition: background 0.3s;
+	appearance: none;
+	border-radius: none;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	font-size: 0;
+	height: 48px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: right;
+	text-indent: -9999px;
+	transition: background 0.3s;
+	width: 48px;
+	&:focus {
+		outline: none;
+	}
+	span {
+		background: white;
+		display: block;
+		height: 4px;
+		left: 18px;
+		position: absolute;
+		right: 18px;
+		top: 44px;
+        width: 35px;
+		&::before {
+			background-color: #ffffff;
+			content: "";
+			display: block;
+			height: 4px;
+			left: 0;
+			position: absolute;
+			top: -10px;
+            width:100%;
+			
+		}
+		&::after {
+			background-color: #ffffff;
+			bottom: -10px;
+			content: "";
+			display: block;
+			height: 4px;
+			left: 0;
+			position: absolute;
+			width:100%;
+		}
+	}
+}
+.c-hamburger--htx {
+	background-color: transparent;
+	span {
+		-webkit-transition: background 0s 0.3s;
+		transition: background 0s 0.3s;
+		&::before {
+			-webkit-transition-delay: 0.3s, 0s;
+			-webkit-transition-duration: 0.3s, 0.3s;
+			-webkit-transition-property: top, -webkit-transform;
+			transition-delay: 0.3s, 0s;
+			transition-duration: 0.3s, 0.3s;
+			transition-property: top, transform;
+		}
+		&::after {
+			-webkit-transition-delay: 0.3s, 0s;
+			-webkit-transition-duration: 0.3s, 0.3s;
+			-webkit-transition-property: bottom, -webkit-transform;
+			transition-delay: 0.3s, 0s;
+			transition-duration: 0.3s, 0.3s;
+			transition-property: bottom, transform;
+		}
+	}
+}
+.c-hamburger--htx.is-active {
+	background-color: transparent;
+	span {
+		background: none;
+		&::before {
+			-ms-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-webkit-transition-delay: 0s, 0.3s;
+			top: 0;
+			transform: rotate(45deg);
+			transition-delay: 0s, 0.3s;
+		}
+		&::after {
+			-ms-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			-webkit-transition-delay: 0s, 0.3s;
+			bottom: 0;
+			transform: rotate(-45deg);
+			transition-delay: 0s, 0.3s;
+		}
+	}
+}
+        
+        .navbar-toggle {
+            border: transparent;
+            
+        }
+        .navbar-nav {
+        
+            & > li{
+                
+                & > a{
+            color:#d5d5d5
+                }
+            }
+            }
+    }
+
+    .position{
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #2d2d30;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        left:0;
+        right:0;
+        .facebook{
+            
+            .facecolor{
+                color:#d5d5d5
+            }
+        }
+        .twitter{
+            
+            .twittercolor{
+                color:#d5d5d5
+            }
+        }
+        .linkedin{
+            
+            .linkedcolor{
+                color:#d5d5d5
+            }
+        }
+        .github{
+            
+            .gitcolor{
+                color:#d5d5d5
+            }
+        }
+        
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+        
+   
+}
 
 
 @import "views/home/home.less";
