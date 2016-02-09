@@ -426,10 +426,10 @@ html {
   .about-content-container .aboutimage img#aboutimg {
     height: 240px;
     width: 180px;
-    border-top-left-radius: 225px 200px;
-    border-top-right-radius: 225px 200px;
-    border-bottom-right-radius: 225px 200px;
-    border-bottom-left-radius: 225px 200px;
+    border-top-left-radius: 112.5px 100px;
+    border-top-right-radius: 112.5px 100px;
+    border-bottom-right-radius: 112.5px 100px;
+    border-bottom-left-radius: 112.5px 100px;
   }
   .about-content-container .aboutcontainer .depotu .depotuimage img#depotuimg {
     height: 47px;
