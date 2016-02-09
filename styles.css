@@ -260,9 +260,16 @@ html {
     max-width: 920px;
   }
   .home-content-container .home-content .home-content-header {
-    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .home-content-container .home-content .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home-content-container .home-content .content-section .profile img#fontpic {
     height: 300px;
@@ -273,6 +280,9 @@ html {
     border-bottom-left-radius: 200px 225px;
   }
   .home-content-container .home-content .home-content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
   }
