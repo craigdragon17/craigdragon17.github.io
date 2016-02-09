@@ -5,7 +5,7 @@ html {
 .background {
   background-attachment: fixed;
   height: 100vh;
-  background-image: url(../../images/iStock_000081383637_XXXLarge.jpg);
+  background-image: url(../../images/iStock_000081383637_XXXLarge-min.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -404,20 +404,25 @@ html {
     justify-content: center;
     align-items: center;
   }
-  .about-content-container .whoami .aboutheadertext {
+  .about-content-container .aboutimage {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .about-content-container .aboutimage img#aboutimg {
-    height: 300px;
-    width: 240px;
+    height: 280px;
+    width: 220px;
     border-top-left-radius: 225px 200px;
     border-top-right-radius: 225px 200px;
     border-bottom-right-radius: 225px 200px;
     border-bottom-left-radius: 225px 200px;
   }
-  .about-content-container .aboutcontainer {
+  .about-content-container .aboutcontainer .depotu .depotuimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content-container .aboutcontainer .uofa .uofaimage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,9 +440,14 @@ html {
     padding-right: 1.25em;
     max-width: 720px;
   }
-  .about-content-container .whoami .aboutheadertext {
+  .about-content-container .whoami {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content-container .aboutimage {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
   .about-content-container .aboutimage img#aboutimg {
@@ -448,9 +458,19 @@ html {
     border-bottom-right-radius: 112.5px 100px;
     border-bottom-left-radius: 112.5px 100px;
   }
+  .about-content-container .aboutcontainer .depotu .depotuimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .about-content-container .aboutcontainer .depotu .depotuimage img#depotuimg {
     height: 47px;
     width: 209px;
+  }
+  .about-content-container .aboutcontainer .uofa .uofaimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 768px) {
