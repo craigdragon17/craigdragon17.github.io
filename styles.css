@@ -418,6 +418,11 @@ html {
     padding-right: 1.25em;
     max-width: 720px;
   }
+  .about-content-container .whoami .aboutheadertext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .about-content-container .aboutimage img#aboutimg {
     height: 240px;
     width: 180px;
