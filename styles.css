@@ -12,6 +12,18 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+a {
+  color: #ffffff;
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover {
+  color: #ffffff;
+}
+a:active {
+  color: #ffffff;
+}
 @media (min-width: 768px) {
   #navbar {
     background-color: #2d2d30;
@@ -56,7 +68,6 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    position: fixed;
   }
   .position .facebook .facecolor {
     color: #d5d5d5;
@@ -226,7 +237,6 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    position: fixed;
   }
   .position .facebook .facecolor {
     color: #d5d5d5;
@@ -265,6 +275,9 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .home-content-container .home-content .home-content-header .homeheadertext {
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
   .home-content-container .home-content .content-section {
     display: flex;
     justify-content: center;
@@ -285,32 +298,9 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .position {
-    z-index: 1000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: #2d2d30;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-  }
-  .position .facebook .facecolor {
-    color: #d5d5d5;
-  }
-  .position .twitter .twittercolor {
-    color: #d5d5d5;
-  }
-  .position .linkedin .linkedcolor {
-    color: #d5d5d5;
-  }
-  .position .github .gitcolor {
-    color: #d5d5d5;
+  .home-content-container .home-content .home-content-footer .hometext {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #2d2d30;
   }
 }
 @media (max-width: 767px) {
@@ -338,6 +328,9 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .home-content-container .home-content .home-content-header .homeheadertext {
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
   .home-content-container .home-content .content-section {
     display: flex;
     justify-content: center;
@@ -358,46 +351,20 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .position {
-    z-index: 1000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: #2d2d30;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-  }
-  .position .facebook .facecolor {
-    color: #d5d5d5;
-  }
-  .position .twitter .twittercolor {
-    color: #d5d5d5;
-  }
-  .position .linkedin .linkedcolor {
-    color: #d5d5d5;
-  }
-  .position .github .gitcolor {
-    color: #d5d5d5;
+  .home-content-container .home-content .home-content-footer .hometext {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #2d2d30;
   }
 }
 @media (min-width: 768px) {
   height: 100vh;
   .about-content-container {
     width: 85%;
-    padding-bottom: 2em;
-    padding-top: 2em;
-    margin-top: 4em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+    padding-bottom: 100px;
     max-width: 720px;
+    bottom: 0;
+    overflow: scroll;
+    padding-bottom: 150px;
   }
   .about-content-container .whoami {
     display: flex;
@@ -408,6 +375,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 65px;
   }
   .about-content-container .aboutimage img#aboutimg {
     height: 280px;
@@ -426,6 +394,14 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .about-content-container .aboutcontainer .infotext {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #2d2d30;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 @media (max-width: 767px) {
@@ -450,6 +426,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 75px;
   }
   .about-content-container .aboutimage img#aboutimg {
     height: 150px;
@@ -472,6 +449,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .about-content-container .aboutcontainer .infotext {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #2d2d30;
   }
 }
 @media (min-width: 768px) {
