@@ -18,9 +18,8 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="background">
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container-fluid">
+    <div class="background background-1">
+    <nav class="container-fluid navbar-fixed-top" id="headNav" role="navigation">
             <div class="navbar-header">
                 <!--<div type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
                     <span class="sr-only">Toggle navigation</span>
@@ -35,22 +34,45 @@
                 <!--<div class="c-hamburger c-hamburger--htx collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                     <span></span>
                 </div>-->
-                    <a class="navbar-brand" id="logo">
-                        <img class="nav-logo" src=""/>
+                    <a class="navbar-brand" href="#page-top">
+                        <i class="fa fa-code headercode"></i>  <span id="logotext">Ethan Fairweather</span>
                     </a>
             </div>
            <div id="navbar" class="navbar-collapse collapse">
                <ul class="nav navbar-nav navbar-right" id="nav">
-                   <li class="mobile"><a href="/#/home">Home</a></li>
-                   <li class="mobile"><a href="/#/about">About</a></li>
-                   <li class="mobile"><a href="/#/portfolio">Portfolio</a></li>
-                   <li class="mobile"><a href="/#/contact">Contact</a></li>
+                   <li><a class="mobile" href="/#/home">Home</a></li>
+                   <li><a class="mobile" href="/#/about">About</a></li>
+                   <li><a class="mobile" href="/#/portfolio">Portfolio</a></li>
+                   <li><a class="mobile"href="/#/contact">Contact</a></li>
                </ul>
            </div>
-        </div>       
+               
     </nav>
-    <ng-view>
+    <ng-view class="viewport">
     </ng-view>
+    <footer class="position ">
+        <div class="facebook">
+            <a href="https://www.facebook.com/ethan.fairweather">
+                <i class="fa fa-3x fa-facebook-official facecolor">
+                </i>
+            </a>
+        </div>
+        <div class="twitter">
+            <a href="https://twitter.com/eburrowfair">
+                <i class="fa fa-3x fa-twitter twittercolor"></i>
+            </a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/efairweather050990">
+                <i class="fa fa-3x fa-linkedin-square linkedcolor"></i>
+            </a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/craigdragon17">
+                <i class="fa fa-3x fa-github gitcolor"></i>
+            </a>
+        </div>
+    </footer>
     </div>
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -74,6 +96,6 @@
     <script src="controllers/about.js"></script>
     <script src="controllers/portfolio.js"></script>
     <script src="controllers/contact.js"></script>
-    <script src=""></script>
+    <script src="controllers/contactcontroller.js"></script>
     <script src=""></script>
 </html>

@@ -1,13 +1,13 @@
 html {
     margin: 0;
     padding: 0;
+    
 }
 
-@media(min-width:768px){
-    
-    .background{
-    height: 100vh;
-    background-image:url(http://res.cloudinary.com/djtbj5voh/image/upload/v1454613951/iStock_000083193947_Large_h9t90z.jpg); 
+.background{
+    background-attachment: fixed;
+    height:100vh;
+    background-image:url(../../images/iStock_000081383637_XXXLarge.jpg); 
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: cover;
@@ -15,9 +15,42 @@ html {
     -o-background-size: cover;
     background-size: cover;
     }
+   
 
-    .navbar{
+@media(min-width:768px){
+    
+    #navbar{
         background-color: #2d2d30;
+        
+        a.mobile {
+            color:#ffffff;
+        }
+       a.mobile:hover{
+                   background-color: transparent;
+                   
+                   
+               } 
+        
+    }
+    .container-fluid{
+        background-color: #2d2d30;
+    }
+    
+    
+    .headercode{
+        color: white;
+            font-weight: 400;
+         #logotext{
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+    
+    #headNav{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
         z-index: 1000;
         
     }
@@ -28,35 +61,100 @@ html {
             border: transparent;
             
         }
-        .navbar-nav {
+            
+    }
+    .position{
+        z-index: 1000;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #2d2d30;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        left:0;
+        right:0;
+        position: fixed;
+        .facebook{
+            
+            .facecolor{
+                color:#d5d5d5
+            }
+        }
+        .twitter{
+            
+            .twittercolor{
+                color:#d5d5d5
+            }
+        }
+        .linkedin{
+            
+            .linkedcolor{
+                color:#d5d5d5
+            }
+        }
+        .github{
+            
+            .gitcolor{
+                color:#d5d5d5
+            }
+        }
         
-            & > li{
-                
-                & > a{
-            color:#d5d5d5
-                }
-            }
-            }
     }
 }
 
 @media(max-width:767px) {
  
- 
- .background{
-    height: 100vh;
-    background-image:url(http://res.cloudinary.com/djtbj5voh/image/upload/v1454613951/iStock_000083193947_Large_h9t90z.jpg); 
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
-
-    .navbar{
+    #navbar{
         background-color: #2d2d30;
+        a.mobile {
+            color:#ffffff;
+        }
+       a.mobile:hover{
+                   background-color: transparent;
+                   
+                   
+               } 
+    }
+    .container-fluid{
+        background-color: #2d2d30;
+    }
+    
+    .headercode{
+        color: white;
+            font-weight: 400;
+         #logotext{
+            color: white;
+            font-weight: 400;
+        }
+    }
+    #headNav{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
         z-index: 1000;
+        
+       
+       .headercode{
+        color: white;
+            font-weight: 400;
+         #logotext{
+            color: white;
+            font-weight: 400;
+        }
+    } 
+        
+    }
+    .navbar-default{
+        
+        .navbar-toggle {
+            border: transparent;
+            
+        }
+            
     }
 
     .navbar-default{
@@ -172,7 +270,47 @@ html {
                 }
             }
             }
-    }   
+    } 
+    .position{
+        z-index: 1000;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #2d2d30;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        left:0;
+        right:0;
+        position: fixed;
+        .facebook{
+            
+            .facecolor{
+                color:#d5d5d5
+            }
+        }
+        .twitter{
+            
+            .twittercolor{
+                color:#d5d5d5
+            }
+        }
+        .linkedin{
+            
+            .linkedcolor{
+                color:#d5d5d5
+            }
+        }
+        .github{
+            
+            .gitcolor{
+                color:#d5d5d5
+            }
+        }
+        
+    }  
 }
 
 
