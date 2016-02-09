@@ -502,7 +502,7 @@ html {
   .vertical-middle {
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -510,7 +510,7 @@ html {
   .vertical-middle {
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 }
