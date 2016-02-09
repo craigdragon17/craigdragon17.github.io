@@ -460,10 +460,9 @@ html {
 @media (max-width: 767px) {
   .portfolio-ctrl {
     height: 100vh;
-    width: 100vw;
   }
   .portfolio-ctrl .content {
-    width: 85%;
+    width: 50%;
     padding-bottom: 2em;
     padding-top: 2em;
     margin-top: 4em;
@@ -479,13 +478,13 @@ html {
   .portfolio-ctrl .content .imgsize {
     position: relative;
     margin: 2%;
-    height: 240px;
-    width: 280px;
+    height: 120px;
+    width: 140px;
     float: left;
   }
   .portfolio-ctrl .content .imgsize img {
-    height: 240px;
-    width: 280px;
+    height: 120px;
+    width: 140px;
     border: 2px solid white;
   }
 }
