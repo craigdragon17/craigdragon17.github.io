@@ -391,6 +391,11 @@ html {
   .about-content-container {
     height: 100vh;
   }
+  .about-content-container .whoami .aboutheadertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .about-content-container .aboutimage img#aboutimg {
     height: 300px;
     width: 240px;
