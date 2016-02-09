@@ -389,6 +389,17 @@ html {
 }
 @media (min-width: 768px) {
   .about-content-container {
+    width: 85%;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    max-width: 720px;
+  }
+  .about-content-container .whoami {
     display: flex;
     justify-content: center;
     align-items: center;
