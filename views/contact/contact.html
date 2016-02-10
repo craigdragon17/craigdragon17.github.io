@@ -1,7 +1,10 @@
 <div class=" vertical-middle">
         <div class="container">
             <div class="panel panel-default">
-                <div ng-controller="ContactController" class="panel-body">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Contact Form</h2>
+                </div>
+                <div ng-controller="contactCtrl" class="panel-body">
                     <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
                         <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
                             <label for="inputName" class="col-xs-3 col-md-3 col-lg-3 control-label">Name</label>
