@@ -1,9 +1,21 @@
-<form action="http://formspree.io/bxdbygax" method="POST">
-  <input type="text" name="_gotcha" style="display: none" />
-  <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" rows="5" placeholder="Your message"></textarea>
-  <input type="submit" value="Send">
-</form>
+<div class="view-container">
+    <h2 class="contact">Contact Me</h2>
+    <form class="contact-container" method="POST">
+        <div class="row name-emailcontainer">
+            <input type="text" name="Name" placeholder="Name" required="">
+            <input type="email" name="Email" placeholder="Email" required="">
+        </div>
+        <br>
+            <textarea class="message-cont" name="message" rows="5" placeholder="Your message"></textarea>
+        <br>
+    <!-- CONFIG -->
+	<input class="hidden" type="text" name="_gotcha">
+	<input type="hidden" name="_subject" value="Subject">
+	<input type="hidden" name="_cc" value="email@cc.com">
+	<!-- /CONFIG -->
+	<input class="submit" type="submit" value="Send">
+    </form>
+</div>
  <script>
     var contactform =  document.getElementById('contact-form');
     contactform.setAttribute('action', '//formspree.io/' + 'ebfairweather' + '@' + 'gmail' + '.' + 'com');
