@@ -518,30 +518,31 @@ a:active {
   }
 }
 @media (min-width: 768px) {
-  .view-container {
+  .vertical-middle {
     height: 100vh;
-  }
-  .view-container .contact {
-    padding-top: 65px;
+    vertical-align: middle;
     justify-content: center;
     align-items: center;
     display: flex;
   }
-  .view-container .contact-container {
-    text-align: center;
+  .vertical-middle .panel .panel-default {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
-  .view-container {
+  .vertical-middle {
     height: 100vh;
-  }
-  .view-container .contact {
-    padding-top: 65px;
+    padding-top: 30px;
+    vertical-align: middle;
     justify-content: center;
     align-items: center;
     display: flex;
   }
-  .view-container .contact-container {
-    text-align: center;
+  .vertical-middle .panel .panel-default {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
