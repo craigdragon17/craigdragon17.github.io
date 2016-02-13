@@ -12,26 +12,21 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-a {
-  color: #ffffff;
-}
-a:visited {
-  color: #ffffff;
-}
-a:hover {
-  color: #ffffff;
-}
-a:active {
-  color: #ffffff;
-}
 @media (min-width: 768px) {
   #navbar {
     background-color: #2d2d30;
   }
-  #navbar a.mobile {
+  #navbar .navbar-brand .headercode {
+    color: white;
+    font-weight: 400;
+  }
+  #navbar .navbar-brand .headercode .logotext {
+    color: white;
+  }
+  #navbar .mobile {
     color: #ffffff;
   }
-  #navbar a.mobile:hover {
+  #navbar .mobile:hover {
     background-color: transparent;
   }
   .container-fluid {
@@ -41,9 +36,8 @@ a:active {
     color: white;
     font-weight: 400;
   }
-  .headercode #logotext {
-    color: #ffffff;
-    font-weight: 400;
+  .logotext {
+    color: white;
   }
   #headNav {
     position: fixed;
@@ -86,10 +80,10 @@ a:active {
   #navbar {
     background-color: #2d2d30;
   }
-  #navbar a.mobile {
+  #navbar .mobile {
     color: #ffffff;
   }
-  #navbar a.mobile:hover {
+  #navbar .mobile:hover {
     background-color: transparent;
   }
   .container-fluid {
@@ -100,6 +94,10 @@ a:active {
     font-weight: 400;
   }
   .headercode #logotext {
+    color: white;
+    font-weight: 400;
+  }
+  .logotext {
     color: white;
     font-weight: 400;
   }
@@ -114,7 +112,7 @@ a:active {
     color: white;
     font-weight: 400;
   }
-  #headNav .headercode #logotext {
+  #headNav .headercode .logotext {
     color: white;
     font-weight: 400;
   }
@@ -517,18 +515,6 @@ a:active {
     border: 2px solid white;
   }
 }
-a {
-  color: #2d2d30;
-}
-a:visited {
-  color: #2d2d30;
-}
-a:hover {
-  color: #2d2d30;
-}
-a:active {
-  color: #2d2d30;
-}
 @media (min-width: 768px) {
   .vertical-middle {
     height: 100vh;
@@ -541,6 +527,9 @@ a:active {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
+  }
+  .vertical-middle .panel .panel-default .panel-body .form-horizontal .form-group .link {
+    color: #2d2d30;
   }
 }
 @media (max-width: 767px) {
