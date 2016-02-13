@@ -1,11 +1,11 @@
-<div class=" vertical-middle">
+<!--<div class=" vertical-middle">
         <div class="container">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h2 class="panel-title">Contact Form</h2>
                 </div>
                 <div class="panel-body">
-                    <form action="http://formspree.io/pmzoywgx" id="contact-form" class="form-horizontal" method="POST">
+                    <form  id="contact-form" class="form-horizontal" method="POST">
                         <div class="form-group">
                             <label for="name" class="col-xs-3 col-md-3 col-lg-3 control-label">Name</label>
                             <div class="col-xs-6 col-md-6 col-lg-6">
@@ -27,44 +27,23 @@
                         <div class="form-group">
                             <div class="col-xs-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-6 col-md-6 col-lg-6">
                                 <!-- CONFIG -->
-	                           <input class="hidden" type="text" name="_gotcha">
+	                          <!-- <input class="hidden" type="text" name="_gotcha">
 	                           <input type="hidden" name="_subject" value="Subject">
-	                           <input type="hidden" name="_cc" value="email@cc.com">
+	                           <input type="hidden" name="_cc" value="email@cc.com">-->
 	                           <!-- /CONFIG -->
-	                           <input class="submit" type="submit" value="Send">
+	                          <!-- <input class="submit" type="submit" value="Send">
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div> 
-<script>
-    var contactform =  document.getElementById('contact-form');
-    contactform.setAttribute('action', '//formspree.io/' + 'ebfairweather' + '@' + 'gmail' + '.' + 'com');
-</script>      
-<script>
-var $contactForm = $('#contact-form');
-$contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: '//formspree.io/your@email.com',
-		method: 'POST',
-		data: $(this).serialize(),
-		dataType: 'json',
-		beforeSend: function() {
-			$contactForm.append('<div class="alert alert--loading"><h4>Sending message…</h4></div>');
-		},
-		success: function(data) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--success"><h4>Message sent!</h4></div>');
-		},
-		error: function(err) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error"><h4>Ops, there was an error.</h4></div>');
-		}
-	});
-});
-</script>
+    </div> -->
+<form action="http://formspree.io/gxbwqbvm" method="POST">
+  <input type="text" name="_gotcha" style="display: none" />
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" rows="5" placeholder="Your message"></textarea>
+  <input type="submit" value="Send">
+</form>
 
     
