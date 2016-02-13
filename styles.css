@@ -517,6 +517,18 @@ a:active {
     border: 2px solid white;
   }
 }
+a {
+  color: #2d2d30;
+}
+a:visited {
+  color: #2d2d30;
+}
+a:hover {
+  color: #2d2d30;
+}
+a:active {
+  color: #2d2d30;
+}
 @media (min-width: 768px) {
   .vertical-middle {
     height: 100vh;
