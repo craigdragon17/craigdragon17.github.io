@@ -93,10 +93,6 @@ html {
     color: white;
     font-weight: 400;
   }
-  .headercode #logotext {
-    color: white;
-    font-weight: 400;
-  }
   .logotext {
     color: white;
     font-weight: 400;
@@ -523,12 +519,12 @@ html {
     align-items: center;
     display: flex;
   }
-  .vertical-middle .panel .panel-default {
+  .vertical-middle .panel {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
   }
-  .vertical-middle .panel .panel-default .panel-body .form-horizontal .form-group .link {
+  .vertical-middle .panel .panel-body .form-horizontal .form-group .link {
     color: #2d2d30;
   }
 }
@@ -541,9 +537,12 @@ html {
     align-items: center;
     display: flex;
   }
-  .vertical-middle .panel .panel-default {
+  .vertical-middle .panel {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
+  }
+  .vertical-middle .panel .panel-body .form-horizontal .form-group .link {
+    color: #2d2d30;
   }
 }
