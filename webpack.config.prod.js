@@ -7,7 +7,7 @@ module.exports = {
     target: 'web',
     output: {
         path: `${__dirname}/public/dist/`,
-        filename: 'app.js'
+        filename: 'bundle.js'
     },
     plugins: [
         new webpack.DefinePlugin({

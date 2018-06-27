@@ -1,5 +1,5 @@
 import angular from 'angular';
-import footerTemplate from './footer.html';
+import footerTemplate from './foot.html';
 
 angular.module('foot', [])
 .directive('foot', () => {

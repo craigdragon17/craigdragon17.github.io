@@ -14,7 +14,7 @@
     "concurrently": "^3.5.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "less": "^2.7.2",
+    "less": "^3.0.0",
     "less-plugin-clean-css": "^1.5.1",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.14.12",
@@ -38,7 +38,7 @@
     "clean": "rimraf public/*",
     "less": "mkdirp public/dist && lessc ./src/styles/main.less > ./public/dist/app.css --clean-css=\"--s0 --advanced\"",
     "start": "concurrently -r \"npm run clean\" \"npm run bundle\" && nodemon ./lib/app.js",
-    "pack": "webpack --config webpack.prod.config.js"
+    "pack": "webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
